@@ -31,16 +31,32 @@
 
     header {
       width: 100%;
-      padding: 80px 20px 60px;
+      padding: 20px 20px 60px;
       text-align: center;
     }
 
     header h1 {
-      font-size: clamp(2rem, 7vw, 3.6rem);
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
+		margin: 0;
+		font-size: clamp(2rem, 7vw, 3.6rem);
+      	letter-spacing: 4px;
+      	text-transform: uppercase;
     }
+
+	header h1 img {
+  	max-width: 800px;   /* adjust size */
+ 	width: 100%;
+	}
+
+	.title-image {
+  		max-width: 800px;
+  		width: 100%;
+  		height: auto;
+  		display: block;
+  		margin: 0 auto;
+  		filter:
+    	drop-shadow(0 0 8px rgba(255, 60, 60, 0.6))
+    	drop-shadow(0 0 18px rgba(255, 100, 0, 0.45));
+	}
 
     header p {
       max-width: 760px;
@@ -319,9 +335,10 @@
 </head>
 
 <body>
-
 <header>
-  <h1>Prompt Showdown</h1>
+  <h1>
+  <img src="final final.png" alt="Prompt Showdown" class="title-image">
+  </h1>
   <p>
     Enter the arena. Out-think, out-prompt and out-create your opponents
     in a high-stakes AI competition.
@@ -512,16 +529,4 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
 
